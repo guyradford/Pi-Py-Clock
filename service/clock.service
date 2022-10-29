@@ -1,0 +1,11 @@
+[Unit]
+Description=Matrix cLock service
+After=multi-user.target
+
+[Service]
+Type=simple
+Restart=always
+ExecStart=/usr/bin/python3 /root/clock/clock.py
+
+[Install]
+WantedBy=multi-user.target
